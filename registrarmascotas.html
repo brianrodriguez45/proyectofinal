@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./cards.html">cards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./formulario.html">formulario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./petcontrol_landing.html">landing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./registrarmascotas.html">registrar mascotas</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        </header>
+        <main>
+            <form action="mascotas.php" method="post" id="formmascotas">
+              <div class="mb-3">
+    <label for="nombre" class="form-label">nombre</label>
+    <input type="text" class="form-control" id="nombre" required>
+    <div class="invalid-feedback">Ingresa su nombre.</div>
+  </div>
+  <div class="mb-3">
+    <label for="tipo" class="form-label">tipo</label>
+    <input type="text" class="form-control" id="tipo" required>
+    <div class="invalid-feedback">Ingresa su tipo.</div>
+  </div>
+  <div class="mb-3">
+    <label for="sexo" class="form-label">sexo</label>
+    <input type="text" class="form-control" id="sexo" required>
+    <div class="invalid-feedback">Ingresa su sexo.</div>
+  </div>
+  
+  <div class="mb-3">
+    <label for="fecha_nacimiento" class="form-label">fecha nacimiento</label>
+    <input type="datetime" class="form-control" id="fecha_nacimiento"  required>
+    <div class="invalid-feedback">Ingresa su fecha nacimiento</div>
+  </div>
+  <div class="mb-3">
+    <label for="raza" class="form-label">raza</label>
+    <input type="text" class="form-control" id="raza" required>
+    <div class="invalid-feedback">Ingresa su raza.</div>
+  </div>
+  <div class="mb-3">
+    <label for="tamaño" class="form-label">tamaño</label>
+    <input type="text" class="form-control" id="tamaño" required>
+    <div class="invalid-feedback">Ingresa su tamaño.</div>
+  </div>
+  <div class="mb-3">
+    <label for="color" class="form-label">color</label>
+    <input type="text" class="form-control" id="color" required>
+    <div class="invalid-feedback">Ingresa su color.</div>
+  </div>
+  <div class="mb-3">
+    <label for="trama" class="form-label">trama</label>
+    <input type="text" class="form-control" id="trama" required>
+    <div class="invalid-feedback">Ingresa su trama.</div>
+  </div>
+  <div class="mb-3">
+    <label for="foto" class="form-label">foto</label>
+    <input type="text" class="form-control" id="foto" required>
+    <div class="invalid-feedback">Ingresa su foto.</div>
+  </div>
+  
+  <button type="submit" class="btn btn-primary" onclick="validarmodal()">registrar mascota</button>
+            </form>
+
+            <a href="./proyectofinal/sessions/login.php">login valen</a> <br>
+            <a href="./proyectofinal/sessions/dashboard.php">dashboard</a><br><a href="./proyectofinal/sessions/logout.php">logout</a><br><a href="./proyectofinal/sessions/index.php">index</a>
+      </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

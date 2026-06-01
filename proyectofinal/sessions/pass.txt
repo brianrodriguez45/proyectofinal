@@ -1,0 +1,2 @@
+# Formato: usuario:hash
+daniel:$2y$10$SN9wHTeRqXuIiBNznsb7OeOFEAAc.C4tW9Mds6Mgtlicv0I.mMMvy
