@@ -33,9 +33,6 @@
           <a class="nav-link" href="./formulario.html">formulario</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./petcontrol_landing.html">landing</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="./registrarmascotas.html">registrar mascotas</a>
         </li>
       </ul>
@@ -47,33 +44,33 @@
             <form action="usuarios.php" method="post" id="registro">
    <div class="mb-3">
     <label for="nombre" class="form-label">nombre</label>
-    <input type="text" class="form-control" id="nombre" required>
+    <input type="text" class="form-control" id="nombre" name="nombre" required>
     <div class="invalid-feedback">Ingresa tu nombre.</div>
   </div>
   <div class="mb-3">
     <label for="apellido" class="form-label">apellido</label>
-    <input type="text" class="form-control" id="apellido" required>
+    <input type="text" class="form-control" id="apellido" name="apellido" required>
     <div class="invalid-feedback">Ingresa tu apellido.</div>
   </div>
   <div class="mb-3">
     <label for="direccion" class="form-label">direccion</label>
-    <input type="text" class="form-control" id="direccion" required>
+    <input type="text" class="form-control" id="direccion" name="direccion" required>
     <div class="invalid-feedback">Ingresa tu direccion.</div>
   </div>
   <div class="mb-3">
     <label for="numero" class="form-label">numero</label>
-    <input type="number" class="form-control" id="numero" required>
+    <input type="number" class="form-control" id="numero" name="numero" required>
     <div class="invalid-feedback">Ingresa tu numero.</div>
   </div>
   
   <div class="mb-3">
     <label for="correo" class="form-label">correo</label>
-    <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" required>
+    <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" name="correo" required>
     <div class="invalid-feedback">Ingresa un correo valido</div>
   </div>
   <div class="mb-3">
     <label for="contraseña" class="form-label">contraseña</label>
-    <input type="password" class="form-control" id="contraseña" required>
+    <input type="password" class="form-control" id="contraseña" name= "contraseña" required>
     <div class="invalid-feedback">Ingresa tu contraseña.</div>
   </div>
   <button type="submit" class="btn btn-primary" onclick="validarmodal()">enviar</button>
