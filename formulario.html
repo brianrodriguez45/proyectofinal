@@ -42,11 +42,6 @@
         <main>
             <p>iniciar sesion</p>
             <form id="iniciarsesion" action="usuarios.php" method="get">
-   <div class="mb-3">
-    <label for="nombre" class="form-label">nombre</label>
-    <input type="text" class="form-control" id="nombre" required>
-    <div class="invalid-feedback">Ingresa tu nombre.</div>
-  </div>
   <div class="mb-3">
     <label for="correo" class="form-label">correo</label>
     <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" required>
@@ -58,12 +53,9 @@
     <div class="invalid-feedback">Ingresa tu contraseña.</div>
   </div>
 
-  <button type="submit" class="btn btn-primary" onclick="validarmodal()">enviar</button>
-  
-</form>
-<div>
+  <button type="submit" class="btn btn-primary" onclick="validarmodal()">iniciar sesion</button>
   <a  class="btn btn-primary" href="./registrarusuarios.html">registrarse</a>
-</div>
+</form>
 
         </main>
         <footer>
