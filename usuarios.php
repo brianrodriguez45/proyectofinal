@@ -25,10 +25,14 @@ VALUES
 
 if ($conn->query($sql) === TRUE) {
     echo "Usuario registrado correctamente";
+
 } else {
     echo "Error: " . $conn->error;
 }
 
+
 $conn->close();
+header("Location: index.html");
+exit;
 
 ?>
