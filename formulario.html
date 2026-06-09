@@ -41,15 +41,15 @@
         </header>
         <main>
             <p>iniciar sesion</p>
-            <form id="iniciarsesion" action="usuarios.php" method="get">
+            <form id="iniciarsesion" action="login.php" method="post">
   <div class="mb-3">
     <label for="correo" class="form-label">correo</label>
-    <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" required>
+    <input type="email" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" required>
     <div class="invalid-feedback">Ingresa un correo valido</div>
   </div>
   <div class="mb-3">
     <label for="contraseña" class="form-label">contraseña</label>
-    <input type="password" class="form-control" id="contraseña" required>
+    <input type="password" class="form-control" id="contraseña" name="contraseña" required>
     <div class="invalid-feedback">Ingresa tu contraseña.</div>
   </div>
 

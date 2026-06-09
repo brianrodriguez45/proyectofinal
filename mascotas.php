@@ -13,9 +13,9 @@ if ($conn->connect_error) {
 $nombre = $_POST['nombre'];
 $tipo = $_POST['tipo'];
 $sexo = $_POST['sexo'];
-$fecha = $_POST['fecha'];
+$fecha_nacimiento = $_POST['fecha_nacimiento'];
 $raza = $_POST['raza'];
-$tamaño = $_POST['tamaño'];
+$tamano = $_POST['tamano'];
 $color = $_POST['color'];
 $trama = $_POST['trama'];
 $foto = $_POST['foto'];
@@ -23,9 +23,9 @@ $foto = $_POST['foto'];
 
 
 $sql = "INSERT INTO mascotas 
-(nombre, tipo, sexo, fecha, raza, tamaño, color, trama, foto)
+(nombre, tipo, sexo, fecha_nacimiento, raza, tamaño, color, trama, foto)
 VALUES
-('$nombre', '$tipo', '$sexo', '$fecha', '$raza', '$tamaño', '$color', '$trama', '$foto')";
+('$nombre', '$tipo', '$sexo', '$fecha_nacimiento', '$raza', '$tamano', '$color', '$trama', '$foto')";
 
 if ($conn->query($sql) === TRUE) {
     echo "mascota registrada correctamente";
