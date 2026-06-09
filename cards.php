@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+if (isset($_SESSION['username'])) {
+    header('Location: index.php');
+    exit;
+}
+
+header('Location: login.php');
+exit;
+
+?>
+
 <!doctype html>
 <html lang="es" data-bs-theme="light">
     <head>
@@ -19,7 +32,7 @@
         <header>
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html">Inicio</a>
+    <a class="navbar-brand" href="./index.php">Inicio</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,10 +42,10 @@
           <a class="nav-link active" aria-current="page" href="./cards.html">cards</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./formulario.html">formulario</a>
+          <a class="nav-link" href="./formulario.php">formulario</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./registrarmascotas.html">registrar mascotas</a>
+          <a class="nav-link" href="./registrarmascotas.php">registrar mascotas</a>
         </li>
       </ul>
     </div>

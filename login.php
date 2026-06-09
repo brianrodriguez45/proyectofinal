@@ -30,7 +30,7 @@ if ($resultado->num_rows > 0) {
     $_SESSION['apellido'] = $datos['apellido'];
     $_SESSION['correo'] = $datos['correo'];
 
-    header("Location: index.html");
+    header("Location: index.php");
     exit();
 
 } else {
